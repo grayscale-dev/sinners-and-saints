@@ -20,7 +20,7 @@ fast, repeatable website remodel workflow.
 
 ## Stack
 
--   Vite
+-   Vite 
 -   Vue 3
 -   TypeScript
 -   PrimeVue
