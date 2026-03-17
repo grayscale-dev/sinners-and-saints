@@ -1,0 +1,9 @@
+{
+  "siteName": "Sinners & Saints Coffee",
+  "sourceUrl": "https://sinnersandsaintscoffee.com/",
+  "primaryColor": "#F01D1C",
+  "secondaryColor": "#FFF",
+  "tone": "modern, clear, trustworthy",
+  "notes": "Use this file to set brand colors and project-level remodeling context before implementation.",
+  "useSupabase": true
+}
