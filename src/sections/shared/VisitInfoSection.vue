@@ -26,17 +26,17 @@ defineProps<{
           </p>
 
           <div class="grid gap-4 sm:grid-cols-2">
-            <Card class="border border-stone-700 bg-stone-900/50">
+            <Card class="border border-stone-200 bg-white">
               <template #content>
                 <div class="space-y-2">
-                  <p class="text-xs font-semibold uppercase tracking-[0.2em] text-stone-400">
+                  <p class="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">
                     Contact
                   </p>
                   <a
                     :href="visit.phoneHref"
                     target="_blank"
                     rel="noreferrer"
-                    class="text-lg font-semibold hover:text-white"
+                    class="text-lg font-semibold text-stone-900 hover:text-stone-700"
                   >
                     {{ visit.phone }}
                   </a>
@@ -44,32 +44,32 @@ defineProps<{
               </template>
             </Card>
 
-            <Card class="border border-stone-700 bg-stone-900/50">
+            <Card class="border border-stone-200 bg-white">
               <template #content>
                 <div class="space-y-2">
-                  <p class="text-xs font-semibold uppercase tracking-[0.2em] text-stone-400">
+                  <p class="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">
                     Hours
                   </p>
-                  <p class="text-lg font-semibold text-white">{{ visit.status }}</p>
-                  <p class="text-sm text-stone-300">{{ visit.hoursLabel }}</p>
+                  <p class="text-lg font-semibold text-stone-900">{{ visit.status }}</p>
+                  <p class="text-sm text-stone-600">{{ visit.hoursLabel }}</p>
                 </div>
               </template>
             </Card>
           </div>
         </div>
 
-        <Card class="border border-stone-700 bg-stone-900/50">
+        <Card class="border border-stone-200 bg-white">
           <template #content>
             <div class="space-y-6">
               <div class="space-y-2">
-                <p class="text-xs font-semibold uppercase tracking-[0.2em] text-stone-400">
+                <p class="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">
                   Address
                 </p>
                 <a
                   :href="visit.mapHref"
                   target="_blank"
                   rel="noreferrer"
-                  class="text-base font-medium leading-relaxed text-white hover:text-stone-200"
+                  class="text-base font-medium leading-relaxed text-stone-900 hover:text-stone-700"
                 >
                   {{ visit.address }}
                 </a>
@@ -89,7 +89,7 @@ defineProps<{
                   :aria-label="social.label"
                   target="_blank"
                   rel="noreferrer"
-                  class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-stone-600 text-lg transition-colors hover:border-stone-300 hover:text-white"
+                  class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-stone-300 text-lg text-stone-700 transition-colors hover:border-stone-400 hover:text-stone-900"
                 >
                   <span :class="social.icon" aria-hidden="true" />
                 </a>

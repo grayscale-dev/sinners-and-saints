@@ -73,23 +73,34 @@ function closeMobileMenu(): void {
         </RouterLink>
       </nav>
 
-      <div class="hidden md:block">
-        <PrimaryButton
-          :label="cta.label"
-          :to="cta.to"
-          :href="cta.href"
-          size="small"
+      <div class="flex items-center gap-2">
+        <div class="hidden md:block">
+          <PrimaryButton
+            :label="cta.label"
+            :to="cta.to"
+            :href="cta.href"
+            size="small"
+          />
+        </div>
+
+        <div class="md:hidden">
+          <PrimaryButton
+            :label="cta.label"
+            :to="cta.to"
+            :href="cta.href"
+            size="small"
+          />
+        </div>
+
+        <Button
+          icon="pi pi-bars"
+          text
+          rounded
+          aria-label="Open navigation menu"
+          class="md:hidden"
+          @click="mobileMenuOpen = true"
         />
       </div>
-
-      <Button
-        icon="pi pi-bars"
-        text
-        rounded
-        aria-label="Open navigation menu"
-        class="md:hidden"
-        @click="mobileMenuOpen = true"
-      />
     </div>
 
     <Drawer
